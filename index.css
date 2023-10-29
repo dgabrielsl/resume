@@ -1,0 +1,112 @@
+:root{
+    --base: #2c3dff;
+    --hbase: #0000ed;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+	cursor: default;
+}
+html,
+html *{
+	font-weight: 400;
+    font-size: 1em;
+	font-family: 'Inter', sans-serif;
+    transition: .15s;
+}
+a{
+    cursor: pointer;
+}
+#site{
+    max-width: 100%;
+}
+.resume-section-home{
+    width: 100%;
+    padding: 1em;
+    text-align: right;
+}
+.resume-section-home button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.google-resume{
+    margin: .8em 1em;
+    color: #000;
+    background-color: #FFF;
+    &:hover{
+        text-decoration: underline;
+    }
+    &:focus{
+        color: var(--base);
+    }
+}
+.google-contact{
+    padding: .8em 3em;
+    color: #FFF;
+    background-color: var(--base);
+    &:hover{
+        background-color: var(--hbase);
+    }
+}
+.resume-section-intro{
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+}
+#owner-img{
+    margin: 0 auto;
+}
+#search-field{
+    display: block;
+    margin: 1em 0;
+    padding: .75em;
+    min-width: 40vw;
+    border: 1px solid #e8e8e8;
+    border-radius: 1.5em;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 0px 5px #c1c1c1;
+    }
+    &:focus{
+        border: 1px solid #c1c1c1;
+        outline: none;
+        box-shadow: none;
+    }
+}
+#search-field::placeholder{
+    color: #c1c1c1;
+}
+.resume-search-foo{
+    margin: 1em .25em;
+    padding: .6em 2.2em;
+    color: #000;
+    background-color: #eef1f4;
+    border: none;
+    outline: none;
+    border-radius: .5em;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 0px 3px 1px #c1c1c1;
+    }
+    &:focus{
+        outline: 1px solid var(--base);
+    }
+}
+.lang{
+    margin: 1em 0;
+    font-size: .8em;
+    color: #aaa;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: .5em;
+    background-color: #eef1f4;
+}
