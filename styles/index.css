@@ -48,7 +48,7 @@ a{
 #google-resume{
     margin: .8em 1em;
     color: #000;
-    background-color: #FFF;
+    background-color: #fff;
     &:hover{
         text-decoration: underline;
     }
@@ -58,10 +58,16 @@ a{
 }
 #google-contact{
     padding: .8em 3em;
-    color: #FFF;
+    color: #fff;
     background-color: var(--base);
+    border-radius: 5px;
     &:hover{
         background-color: var(--hbase);
+        box-shadow: 0 0 5px 4px #e8e8e8;
+    }
+    &:focus{
+        background-color: var(--base);
+        box-shadow: none;
     }
 }
 .resume-section-intro{
@@ -103,7 +109,7 @@ a{
 }
 #search-options{
     padding: 1em 1.5em;
-    background-color: #FFF;
+    background-color: #fff;
     position: absolute;
     right: 0;
     left: 0;

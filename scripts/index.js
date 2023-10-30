@@ -9,6 +9,8 @@ search_field = d.getElementById('search-field')
 search_options = d.getElementById('search-options')
 info_bar = d.getElementById('info-bar')
 search_shortcut = d.getElementsByClassName('search-shortcut')
+google_resume = d.getElementById('google-resume')
+google_contact = d.getElementById('google-contact')
 
 var hms = ''
 
@@ -116,6 +118,14 @@ d.addEventListener('mousemove', (event)=>{
     }else{
         info_bar.innerHTML = 'Welcome!'
     }
+})
+
+google_resume.addEventListener('click', ()=>{
+    window.location.href = 'html/en-home.html'
+})
+
+google_contact.addEventListener('click', ()=>{
+    window.location.href = ''
 })
 
 updateDT()
