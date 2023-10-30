@@ -11,6 +11,7 @@ info_bar = d.getElementById('info-bar')
 search_shortcut = d.getElementsByClassName('search-shortcut')
 google_resume = d.getElementById('google-resume')
 google_contact = d.getElementById('google-contact')
+just_name = d.getElementById('just-name')
 
 var hms = ''
 
@@ -105,7 +106,7 @@ d.addEventListener('mousemove', (event)=>{
         if(y == 'lang' || y == 'a-lang'){
             info_bar.innerHTML = '🌎 You can select the language in which you want to view this site'
         }else if(z != '' && z != undefined && z.length < 200){
-            if(z == 'Software development'){
+            if(z == 'Software development skills'){
                 info_bar.innerHTML = '✨ This takes you straight to what you might be most interested in!'
             }else if(z == `I'm feeling lucky`){
                 info_bar.innerHTML = '🔮 Go to a random section'
@@ -124,10 +125,14 @@ google_contact.addEventListener('click', ()=>{
     window.location.href = ''
 })
 
+just_name.addEventListener('click', ()=>{
+    window.location.href = 'index.html'
+})
+
 window.onload = ()=>{
     setTimeout(()=>{
         d.getElementById('foo').style = 'display: inline-block;'
-    }, 500);
+    }, 1300);
 }
 
 updateDT()

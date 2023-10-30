@@ -6,8 +6,8 @@
 	margin: 0;
 	padding: 0;
 	-ms-user-select: none;
-	-webkit-user-select: none;
 	-moz-user-select: none;
+	-webkit-user-select: none;
 	user-select: none;
 	box-sizing: border-box;
 	cursor: default;
@@ -184,4 +184,27 @@ a{
 #info-datetime{
     text-align: right;
     z-index: 9;
+}
+#home-header{
+    padding: 1.5em;
+    background-color: #f5f4f4;
+    display: grid;
+    grid-template-columns: min-content min-content;
+}
+#just-name{
+    height: 2em;
+    cursor: pointer;
+    align-self: center;
+    position: relative;
+}
+#input-searchbar{
+    margin: 0 2em;
+    padding: .4em .5em;
+    min-width: 25vw;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    align-self: center;
+    &:focus{
+        outline: none;
+    }
 }
