@@ -26,18 +26,15 @@ function updateDT(){
     }, 1000)
 }
 
-setTimeout(()=>{
-    d.getElementById('foo').style = `display: inline-block;`
-}, 750);
-
 search_field.addEventListener('focusout', ()=>{
+    search_field.style = 'border-radius: 1.5em;'
+    if(search_field.value == '/'){
+        search_field.value = ''
+    }
+    search_options.style = 'display: block; opacity: 0; transition: .35s;'
     setTimeout(()=>{
-        if(search_field.value == '/'){
-            search_field.value = ''
-        }
         search_options.style = 'display: none;'
-        search_field.style = 'border-radius: 1.5em;'
-    }, 100)
+    }, 350)
 })
 
 search_field.addEventListener('focusin', ()=>{
@@ -53,7 +50,6 @@ function usingSearchingBar(){
     }
     searchx = searchx.split('/')
     searchx = searchx[1]
-    
     if(searchx == '' || searchx == '/'){
         for(i=0; i<search_shortcut.length; i++){
             search_shortcut[i].style = 'display: block;'
@@ -107,7 +103,7 @@ d.addEventListener('mousemove', (event)=>{
         }
     }else if(y != '' && y != undefined){
         if(y == 'lang' || y == 'a-lang'){
-            info_bar.innerHTML = '🌎 You can select in which language display you this site'
+            info_bar.innerHTML = '🌎 You can select the language in which you want to view this site'
         }else if(z != '' && z != undefined && z.length < 200){
             if(z == 'Software development'){
                 info_bar.innerHTML = '✨ This takes you straight to what you might be most interested in!'
@@ -127,5 +123,11 @@ google_resume.addEventListener('click', ()=>{
 google_contact.addEventListener('click', ()=>{
     window.location.href = ''
 })
+
+window.onload = ()=>{
+    setTimeout(()=>{
+        d.getElementById('foo').style = 'display: inline-block;'
+    }, 500);
+}
 
 updateDT()

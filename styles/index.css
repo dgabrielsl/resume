@@ -79,10 +79,6 @@ a{
 #owner-img{
     margin: 0 auto;
     border-radius: 2em;
-    cursor: pointer;
-    &:hover{
-        translate: 0 -.15em;
-    }
 }
 #widget-search-bar{
     position: relative;
@@ -117,6 +113,13 @@ a{
     box-shadow: 0 3px 3px #c1c1c1;
     border-radius: 0 0 1em 1em;
     display: none;
+    animation: slidein-rsi .25s;
+}
+@keyframes slidein-rsi{
+    from{
+        opacity: 0;
+        translate: 0 .5em;
+    }
 }
 .search-shortcut{
     margin: .5em 0;
