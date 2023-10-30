@@ -1,5 +1,3 @@
-var d, foo, dt
-
 d = document
 foo = d.getElementById('foo')
 dt = new Date();
@@ -11,7 +9,6 @@ info_bar = d.getElementById('info-bar')
 search_shortcut = d.getElementsByClassName('search-shortcut')
 google_resume = d.getElementById('google-resume')
 google_contact = d.getElementById('google-contact')
-just_name = d.getElementById('just-name')
 
 var hms = ''
 
@@ -78,7 +75,6 @@ search_field.addEventListener('click', ()=>{
     }
     usingSearchingBar()
 })
-
 d.addEventListener('keydown', (event)=>{
     if(event.key == '/'){
         search_field.focus()
@@ -123,10 +119,6 @@ google_resume.addEventListener('click', ()=>{
 
 google_contact.addEventListener('click', ()=>{
     window.location.href = ''
-})
-
-just_name.addEventListener('click', ()=>{
-    window.location.href = 'index.html'
 })
 
 window.onload = ()=>{
