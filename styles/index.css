@@ -208,3 +208,87 @@ a{
         outline: none;
     }
 }
+#nav-bar{
+    padding: 0 7em;
+    box-shadow: inset 0 -2px 2px 2px #c1c1c133;
+}
+#decorative-nav-foo{
+    padding: 1.6em 7em .25em 8.5em;
+    font-size: 13px;
+    color: #555;
+}
+.nav-bar-item{
+    padding: 1em;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        color: var(--base);
+        text-decoration: underline;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.nv-active-link{
+    color: var(--base);
+    border-bottom: 4px solid var(--base);
+    cursor: default;
+    &:hover{
+        text-decoration: none;
+    }
+}
+#core{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.core-area{
+    padding: .8em;
+    cursor: pointer;
+    padding: 0 7em;
+}
+.core-area{
+    margin: .85em 0;
+}
+.core-area h1{
+    width: fit-content;
+    color: var(--base);
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+        color: var(--hbase);
+        text-decoration: underline;
+    }
+}
+.core-area h2{
+    color: #1f8724;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.core-area p{
+    color: #555;
+    font-weight: 1em;
+}
+#related{
+    margin: 2em 7em;
+}
+.a-related{
+    width: fit-content;
+    color: var(--base);
+    font-size: 1.1em;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    &:hover{
+        color: var(--hbase);
+        text-decoration: underline;
+        translate: 1.5em 0;
+    }
+}
+.a-related:hover::after{
+    content: '↗️';
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+}

@@ -75,6 +75,7 @@ search_field.addEventListener('click', ()=>{
     }
     usingSearchingBar()
 })
+
 d.addEventListener('keydown', (event)=>{
     if(event.key == '/'){
         search_field.focus()
