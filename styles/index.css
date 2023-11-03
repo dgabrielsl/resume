@@ -230,7 +230,7 @@ a{
 }
 .nav-bar-item{
     padding: 1em;
-    background-color: #fff;
+    background-color: #fff0;
     border: none;
     cursor: pointer;
     &:hover{
