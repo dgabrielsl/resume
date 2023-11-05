@@ -9,6 +9,8 @@ info_bar = d.getElementById('info-bar')
 search_shortcut = d.getElementsByClassName('search-shortcut')
 google_resume = d.getElementById('google-resume')
 google_contact = d.getElementById('google-contact')
+main_bt_1 = d.getElementById('main-bt-1')
+main_bt_2 = d.getElementById('main-bt-2')
 
 var hms = ''
 
@@ -112,6 +114,7 @@ d.addEventListener('mousemove', (event)=>{
 
 google_resume.addEventListener('click', ()=>{window.location.href = 'html/en-home.html'})
 google_contact.addEventListener('click', ()=>{window.location.href = 'html/en-contact.html'})
+main_bt_1.addEventListener('click', ()=>{window.location.href = 'html/en-dedicated-section.html'})
 
 window.onload = ()=>{setTimeout(()=>{d.getElementById('foo').style = 'display: inline-block;'},1300)}
 

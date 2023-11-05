@@ -431,9 +431,48 @@ a{
     color: #aaa;
     font-weight: 200 !important;
 }
-
-
-
+.product-display{
+    max-width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 10%;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 0 2px 2px;
+    border-style: none none solid solid;
+    border-color: #1f872455;
+    border-radius: 3px;
+}
+.product-display > div > p{
+    padding-right: 2.5em;
+}
+.product-display img{
+    max-height: 320px;
+    border-radius: 3px;
+}
+#panel-control{
+    text-align: center;
+}
+#panel-control button{
+    padding: .8em 5em;
+    color: var(--base);
+    background-color: #fff;
+    border: 1px solid var(--base);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color: var(--base);
+        translate: 0 -.25em;
+    }
+    &:focus{
+        color: #fff;
+        background-color: var(--hbase);
+        animation: bt-pressed .5s;
+    }
+}
 
 
 
