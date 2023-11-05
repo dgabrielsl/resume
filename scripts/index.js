@@ -65,14 +65,10 @@ function usingSearchingBar(){
     }
 }
 
-search_field.addEventListener('keyup', ()=>{
-    usingSearchingBar()
-})
+search_field.addEventListener('keyup', ()=>{usingSearchingBar()})
 
 search_field.addEventListener('click', ()=>{
-    if(search_field.value == ''){
-        search_field.value = '/'
-    }
+    if(search_field.value == ''){search_field.value = '/'}
     usingSearchingBar()
 })
 
@@ -114,18 +110,9 @@ d.addEventListener('mousemove', (event)=>{
     }
 })
 
-google_resume.addEventListener('click', ()=>{
-    window.location.href = 'html/en-home.html'
-})
+google_resume.addEventListener('click', ()=>{window.location.href = 'html/en-home.html'})
+google_contact.addEventListener('click', ()=>{window.location.href = 'html/en-contact.html'})
 
-google_contact.addEventListener('click', ()=>{
-    window.location.href = ''
-})
-
-window.onload = ()=>{
-    setTimeout(()=>{
-        d.getElementById('foo').style = 'display: inline-block;'
-    }, 1300);
-}
+window.onload = ()=>{setTimeout(()=>{d.getElementById('foo').style = 'display: inline-block;'},1300)}
 
 updateDT()
