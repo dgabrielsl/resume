@@ -8,7 +8,7 @@ just_name.addEventListener('click', ()=>{
     window.location.href = '../index.html'
 })
 
-try{d.getElementById('contact-card-launcher').addEventListener('click', ()=>{window.location.href = '../index.html'})}catch{}
+try{d.getElementById('contact-card-launcher').addEventListener('click', ()=>{window.location.href = 'en-contact.html'})}catch{}
 try{core_area[0].addEventListener('click', ()=>{window.location.href = 'en-review.html'})}catch{}
 try{core_area[1].addEventListener('click', ()=>{window.location.href = 'en-achievements.html'})}catch{}
 try{core_area[2].addEventListener('click', ()=>{window.location.href = 'en-skills.html'})}catch{}
