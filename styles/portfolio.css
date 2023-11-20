@@ -17,3 +17,14 @@ html *{
     background-color: var(--base);
 	font-family: 'Inter', sans-serif;
 }
+#home{
+    max-width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 2em;
+    box-shadow:
+        -12px 0 12px #fff,
+        inset 5px 0 5px #efefef,
+        inset -5px 0 5px #efefef,
+        12px 0 12px #ddd;
+}
