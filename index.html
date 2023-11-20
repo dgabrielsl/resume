@@ -5,48 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Profesional resume - Gabriel Solano L.">
     <meta name="theme-color" content="rgb(50,50,50)">
-    <title>Resume - Home</title>
-    <link rel="icon" type="image/png" href="media/icon.png">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Gabriel S. - Web portfolio</title>
+    <link rel="icon" type="image/png" href="assets/default.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scripts/style.css">
 </head>
 <body>
-    <div id="site">
-        <header>
-            <div class="resume-section-home">
-                <button id="google-resume">Google Resume</button>
-                <button id="google-contact">Contact</button>
-            </div> 
-        </header>
-        <section>
-            <div class="resume-section-intro">
-                <img id="owner-img" src="media/name.png" alt="Gabriel Solano Lopez" title="Reload page">
-                <div id="widget-search-bar">
-                    <input type="text" id="search-field" placeholder="Type / to search">
-                    <div id="search-options">
-                        <a class="search-shortcut" href="html/en-home.html">Recommended: ⭐ Google resume</a>
-                        <a class="search-shortcut" href="html/en-review.html">📝 Self review</a>
-                        <a class="search-shortcut" href="html/en-achievements.html">🏆 Achievements and awards</a>
-                        <a class="search-shortcut" href="html/en-skills.html">🪄 My skills & abilities</a>
-                        <a class="search-shortcut" href="html/en-background.html">🔍 My professional background</a>
-                        <a class="search-shortcut" href="html/en-training.html">🧠 My academic training</a>
-                        <a class="search-shortcut" href="html/en-references.html">💎 Professional references</a>
-                        <a class="search-shortcut" href="html/en-contact.html">📞 Contact me</a>
-                        <a class="search-shortcut" href="https://github.com/dgabrielsl?tab=repositories" target="_blank">👾 GitHub's portfolio ↗️</a>
-                        <a class="search-shortcut" href="https://www.linkedin.com/in/dgabrielsolo/" target="_blank">🪪 LinkedIn ↗️</a>
-                        <!-- <a class="search-shortcut ss-highlight" href="" target="_blank">👾 GSResume Store ↗️</a> -->
+    <div id="home">
+        <div id="site">
+            <header>
+                <nav>
+                    <div id="interactive-panel">
+                        <div class="drivers-wrapper">
+                            <button class="iteractive-driver driver-on" id="driver-review"></button>
+                        </div>
+                        <div class="drivers-wrapper">
+                            <button class="iteractive-driver" id="driver-training"></button>
+                            <button class="iteractive-driver" id="driver-background"></button>
+                            <button class="iteractive-driver" id="driver-achievements"></button>
+                            <button class="iteractive-driver" id="driver-skills"></button>
+                            <button class="iteractive-driver" id="driver-references"></button>
+                        </div>
+                        <div class="drivers-wrapper">
+                            <button class="iteractive-driver" id="driver-hire"></button>
+                        </div>
+                        <div class="drivers-wrapper">
+                            <p class="date-time">21:40H Sunday, Nov 19</p>
+                        </div>
                     </div>
+                </nav>
+            </header>
+            <section>
+                <div id="items-slate">
+                    <div class="items-slate item-review">
+                    </div>
+
+
+<!--
+                    <div class="items-slate" id="item-training"></div>
+                    <div class="items-slate" id="item-background"></div>
+                    <div class="items-slate" id="item-achievements"></div>
+                    <div class="items-slate" id="item-skills"></div>
+                    <div class="items-slate" id="item-references"></div>
+                    <div class="items-slate" id="item-hire"></div>
+                    <div class="items-slate" id="item-datetime"></div>
+-->
                 </div>
-                <button id="main-bt-1" class="resume-search-foo">Software development skills</button>
-                <button id="main-bt-2" class="resume-search-foo">I'm feeling lucky</button>
-                <p class="lang">🌐 Offered also in: <a href="" class="a-lang">Spanish</a></p>
-            </div>
-        </section>
-        <footer id="foo">
-            <span id="info-bar">Welcome!</span>
-            <p id="info-datetime">-</p>
-        </footer>
+            </section>
+        </div>
     </div>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -91,3 +91,24 @@ body{
         scale: 1;
     }
 }
+#driver-review{
+    background-image: url('../media/default.png');
+}
+#driver-training{
+    background-image: url('../media/default.png');
+}
+#driver-background{
+    background-image: url('../media/default.png');
+}
+#driver-achievements{
+    background-image: url('../media/default.png');
+}
+#driver-skills{
+    background-image: url('../media/default.png');
+}
+#driver-references{
+    background-image: url('../media/default.png');
+}
+#driver-hire{
+    background-image: url('../media/default.png');
+}
