@@ -93,6 +93,10 @@ body{
     background-size: auto 40%;
     background-position: center;
     background-repeat: no-repeat;
+    transition: .05s;
+    &:hover{
+        background-size: auto 55%;
+    }
 }
 #driver-review{
     background-image: url('../assets/review.png');
