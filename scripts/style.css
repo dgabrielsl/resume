@@ -26,8 +26,11 @@ body{
         inset 20px 12px 9px 9px #bbb,
         inset -20px -12px 9px 9px #fff;
 }
+button{
+    outline: none !important;
+}
 #home{
-    max-width: 75%;
+    max-width: 80%;
     min-height: 100vh;
     margin: 0 auto;
     padding-top: 2em;
@@ -44,11 +47,11 @@ body{
     place-items: center;
 }
 .drivers-wrapper{
-    padding: 1.5em;;
+    padding: 1.5em 1em;
 }
 .drivers-wrapper:nth-child(2),
 .drivers-wrapper:nth-child(4),
-#iteractive-screen{
+#interactive-screen{
     border-radius: 1.5em;
     box-shadow:
         -3px -3px 5px #fff,
@@ -60,7 +63,10 @@ body{
     padding: 1.5em 3em;
     text-align: center;
 }
-.iteractive-driver{
+.drivers-wrapper:nth-child(5){
+    margin-left: 1.5em;
+}
+.interactive-driver{
     width: 60px;
     height: 60px;
     margin: .5em 1.5em;
@@ -90,7 +96,7 @@ body{
         scale: 1;
     }
 }
-.iteractive-driver{
+.interactive-driver{
     background-image: url('../assets/default.png');
     background-size: auto 40%;
     background-position: center;
@@ -128,28 +134,33 @@ body{
     background-image: url('../assets/hire.png');
     &:hover{background-image: url('../assets/hire-colored.png');}
 }
+#driver-print{
+    background-image: url('../assets/print.png');
+    &:hover{background-image: url('../assets/print-colored.png');}
+}
 .sensor{
     width: 40px;
     height: 40px;
-    background-color: #fff;
     border-radius: 20px;
     display: flex;
     place-items: center;
     justify-content: center;
+    box-shadow:
+        -5px 0 5px #fff,
+        0 -5px 5px #fff,
+        inset 3px 3px 5px #ddd,
+        inset -3px -3px 5px #fff,
+        5px 0 5px #ddd,
+        0 5px 5px #ddd;
 }
 #sensor{
     width: 10px;
     height: 10px;
-    background-color: var(--color);
-    border: none;
+    background-color: #a00;
     border-radius: 50%;
-    box-shadow:
-        -5px 0 2px 2px #fff,
-        0 -5px 2px 2px #fff,
-        5px 0 2px 2px #ddd,
-        0 5px 2px 2px #ddd,
+    border: none;
 }
-#iteractive-screen{
+#interactive-screen{
     margin: 0 5em;
     padding: 1.5em 3em;
     display: flex;
@@ -158,5 +169,27 @@ body{
 }
 #items-slate{
     margin: 1em 5em;
+    padding: 1em;
+    box-shadow:
+        -5px -5px 5px #fff,
+        inset 2px 2px 2px #fff,
+        inset -2px -2px 2px #ddd,
+        5px 5px 5px #ddd;
+    border-radius: 1em;
+}
+#items-slate > div{
+    padding: .7em;
+    box-shadow:
+        -2px -3px 3px #fff,
+        inset 3px 3px 3px #ddd,
+        inset -3px -3px 3px #fff,
+        3px 3px 3px #ddd;
+    border-radius: 1em;
+}
+#items-slate > div > div{
     padding: 2em;
+    box-shadow:
+        -2px -3px 3px #fff,
+        3px 3px 3px #ddd;
+    border-radius: 1em;
 }
