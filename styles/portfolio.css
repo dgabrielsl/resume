@@ -1,0 +1,19 @@
+:root{
+    --base: #ebecf0;
+    --color: #c3092e;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+	cursor: default;
+}
+html,
+html *{
+    background-color: var(--base);
+	font-family: 'Inter', sans-serif;
+}
