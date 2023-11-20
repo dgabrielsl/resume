@@ -71,9 +71,6 @@ body{
     border-radius: 99px;
     transition: .4s;
     cursor: pointer;
-    &:hover{
-        scale: .9;
-    }
 }
 .driver-on{
     box-shadow:
@@ -91,24 +88,37 @@ body{
         scale: 1;
     }
 }
+.iteractive-driver{
+    background-image: url('../assets/default.png');
+    background-size: auto 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 #driver-review{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/review.png');
+    &:hover{background-image: url('../assets/review-colored.png');}
 }
 #driver-training{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/training.png');
+    &:hover{background-image: url('../assets/training-colored.png');}
 }
 #driver-background{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/background.png');
+    &:hover{background-image: url('../assets/background-colored.png');}
 }
 #driver-achievements{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/achievements.png');
+    &:hover{background-image: url('../assets/achievements-colored.png');}
 }
 #driver-skills{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/skills.png');
+    &:hover{background-image: url('../assets/skills-colored.png');}
 }
 #driver-references{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/references.png');
+    &:hover{background-image: url('../assets/references-colored.png');}
 }
 #driver-hire{
-    background-image: url('../media/default.png');
+    background-image: url('../assets/hire.png');
+    &:hover{background-image: url('../assets/hire-colored.png');}
 }
