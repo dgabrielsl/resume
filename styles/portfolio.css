@@ -14,9 +14,9 @@
 }
 html,
 html *{
-    color: #A88;
+    color: #333;
 	font-family: 'Inter', sans-serif;
-    /* font-weight: 400; */
+    font-weight: 300;
 }
 html{
     background-color: var(--base);
@@ -27,7 +27,7 @@ body{
         inset -20px -12px 9px 9px #fff;
 }
 #home{
-    max-width: 70%;
+    max-width: 75%;
     min-height: 100vh;
     margin: 0 auto;
     padding-top: 2em;
@@ -59,8 +59,8 @@ body{
     text-align: center;
 }
 .iteractive-driver{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: .5em 1.5em;
     box-shadow:
         -9px -9px 9px 9px #fff,
@@ -68,20 +68,26 @@ body{
         inset -2px -2px 9px #ddd,
         9px 9px 9px 9px #ddd;
     border: none;
-    border-radius: 70px;
-    transition: .25s;
+    border-radius: 99px;
+    transition: .4s;
     cursor: pointer;
     &:hover{
+        scale: .9;
     }
 }
 .driver-on{
     box-shadow:
-        inset 9px 9px 9px #fff,    
-        inset -9px -9px 9px 9px #ddd;
-        cursor: default;
+        -3px -3px 3px 5px #ddd,
+        inset 3px 3px 2px 3px #fff,    
+        inset -3px -3px 2px 3px #ddd,
+        3px 3px 3px 5px #fff;
+    cursor: default;
     &:hover{
         box-shadow:
-        inset 9px 9px 9px #fff,    
-        inset -9px -9px 9px 9px #ddd;
+            -3px -3px 3px 5px #ddd,
+            inset 3px 3px 2px 3px #fff,    
+            inset -3px -3px 2px 3px #ddd,
+            3px 3px 3px 5px #fff;
+        scale: 1;
     }
 }
