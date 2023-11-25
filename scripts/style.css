@@ -70,70 +70,81 @@ button{
     width: 60px;
     height: 60px;
     margin: .5em 1.5em;
+    background-image: url('../assets/default.png');
+    background-size: auto 55%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow:
-        -9px -9px 9px 9px #fff,
-        inset 2px 2px 9px #fff,
-        inset -2px -2px 9px #ddd,
-        9px 9px 9px 9px #ddd;
+        -3px 0 5px #fff,
+        0 -3px 5px #fff,
+        3px 0 5px #ddd,
+        5px 0 5px #ddd;
     border: none;
     border-radius: 99px;
-    transition: .4s;
+    transition: .6s;
     cursor: pointer;
+    &:hover{
+        box-shadow:
+            -9px 0 9px #fff,
+            0 -9px 9px #fff,
+            9px 0 9px #ddd,
+            0 9px 9px #ddd;
+    }
+    &:focus{
+        box-shadow:
+            -9px 0 9px #fff,
+            0 -9px 9px #fff,
+            inset 4px 4px 4px #ddd,
+            inset -4px -4px 4px #fff,
+            9px 0 9px #ddd,
+            0 9px 9px #ddd;
+        background-size: 50%;
+    }
 }
 .driver-on{
     box-shadow:
         -9px 0 9px #fff,
         0 -9px 9px #fff,
-        inset 2px 2px 5px #ddd,
-        inset -2px -2px 5px #fff,
+        inset 4px 4px 4px #ddd,
+        inset -4px -4px 4px #fff,
         9px 0 9px #ddd,
         0 9px 9px #ddd;
+    background-size: 50%;
     cursor: default;
+    background-size: 50%;
     &:hover{
-        scale: 1;
-    }
-}
-.interactive-driver{
-    background-image: url('../assets/default.png');
-    background-size: auto 40%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: .05s;
-    &:hover{
-        background-size: auto 55%;
+        box-shadow:
+            -9px 0 9px #fff,
+            0 -9px 9px #fff,
+            inset 4px 4px 4px #ddd,
+            inset -4px -4px 4px #fff,
+            9px 0 9px #ddd,
+            0 9px 9px #ddd;
     }
 }
 #driver-review{
     background-image: url('../assets/review.png');
-    &:hover{background-image: url('../assets/review-colored.png');}
 }
 #driver-training{
     background-image: url('../assets/training.png');
-    &:hover{background-image: url('../assets/training-colored.png');}
 }
 #driver-background{
     background-image: url('../assets/background.png');
-    &:hover{background-image: url('../assets/background-colored.png');}
 }
 #driver-achievements{
     background-image: url('../assets/achievements.png');
-    &:hover{background-image: url('../assets/achievements-colored.png');}
 }
 #driver-skills{
     background-image: url('../assets/skills.png');
-    &:hover{background-image: url('../assets/skills-colored.png');}
 }
 #driver-references{
     background-image: url('../assets/references.png');
-    &:hover{background-image: url('../assets/references-colored.png');}
 }
 #driver-hire{
     background-image: url('../assets/hire.png');
-    &:hover{background-image: url('../assets/hire-colored.png');}
 }
 #driver-print{
     background-image: url('../assets/print.png');
-    &:hover{background-image: url('../assets/print-colored.png');}
 }
 .sensor{
     width: 40px;
@@ -230,7 +241,9 @@ button{
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    &:hover{background-image: url('../assets/self-picture-colored.png');}
+    &:hover{
+        background-image: url('../assets/self-picture-colored.png');
+    }
 }
 .rc-picture h1{
     font-size: 1.8em;
@@ -498,4 +511,83 @@ button{
     text-align: left;
     list-style-type: square;
     list-style-position: inside;
+}
+#item-skills{
+    padding: 0 1.5em;
+}
+.item-skills-block > div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item-skills-block h1{
+    margin: .75em;
+    padding: .3em .5em;
+    font-size: 1.5em;
+    font-weight: 200;
+    box-shadow:
+        -5px -5px 5px #ddd,
+        inset 5px 5px 5px #ddd,
+        inset -5px -5px 5px #fff,
+        5px 5px 5px #fff;
+    border-radius: 5px;
+}
+.is-block-for-skills{
+    margin: 0 1em 2em 1em;
+    padding: .25em;
+    box-shadow:
+        -5px 0 2px #fff,
+        0 -5px 2px #fff,
+        5px 0 2px #ddd,
+        0 5px 2px #ddd;
+    border-radius: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.for-skills-bt{
+    margin-right: 1em;
+    padding: 2.5em;
+    box-shadow:
+        inset 3px 3px 3px #ddd,
+        inset -3px -3px 3px #fff;
+    border-radius: 50%;
+    border: none;
+    background-image: url('../assets/default.png');
+    background-size: 50% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#s-1{
+    background-image: url('../assets/networking.png');
+}
+#s-2{
+    background-image: url('../assets/python.png');
+}
+#s-3{
+    background-image: url('../assets/javascript.png');
+}
+#s-4{
+    background-image: url('../assets/database.png');
+}
+#s-5{
+    background-image: url('../assets/java.png');
+}
+#s-6{
+    background-image: url('../assets/c++.png');
+}
+#s-7{
+    background-image: url('../assets/html.png');
+}
+#s-8{
+    background-image: url('../assets/css.png');
+}
+#s-9{
+    background-image: url('../assets/modeling.png');
+}
+#s-10{
+    background-image: url('../assets/art.png');
+}
+#s-11{
+    background-image: url('../assets/computer.png');
 }
