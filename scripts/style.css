@@ -773,7 +773,7 @@ button{
 }
 #portf-screen p{
     max-width: 95%;
-    margin-bottom: 1.5em ;
+    margin-bottom: .5em ;
     line-height: 1.65em;
 }
 #portf-screen p:nth-last-child(1){
@@ -784,12 +784,46 @@ button{
     grid-template-columns: 60% 40%;
 }
 .rd-cols{
+    margin: 1.5em 0;
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
 .rd-cols-title p{
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: var(--color);
+    letter-spacing: -1.2px;
+}
+.cols-for-extended-info h2{
+    margin-bottom: .4em;
+    width: fit-content;
+    color: #333;
+    font-size: 1em;
+    font-weight: 400;
+    position: relative;
+    &::after{
+        content: '';
+        width: 100%;
+        height: .6em;
+        position: absolute;
+        background-color: #ff00552a;
+        bottom: -.1em;
+        left: 0;
+    }
+}
+.cols-for-extended-info a{
+    color: #c06;
+    text-underline-position: under;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+        color: #000;
+        letter-spacing: .25px;
+    }
+    &:hover::after{
+        margin-left: .5em;
+        content: '↗';
+        position: absolute;
+    }
 }
