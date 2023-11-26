@@ -47,7 +47,7 @@ button{
     place-items: center;
 }
 .drivers-wrapper{
-    padding: 1.5em 1em;
+    padding: .85em .5em;
 }
 .drivers-wrapper:nth-child(2),
 .drivers-wrapper:nth-child(4),
@@ -60,18 +60,18 @@ button{
         -3px -3px 5px #ccc;
 }
 .drivers-wrapper:nth-child(4){
-    padding: 1.5em 3em;
+    padding: 1em 1.5em;
     text-align: center;
 }
 .drivers-wrapper:nth-child(5){
     margin-left: 1.5em;
 }
 .interactive-driver{
-    width: 60px;
-    height: 60px;
-    margin: .5em 1.5em;
+    width: 50px;
+    height: 50px;
+    margin: .5em .85em;
     background-image: url('../assets/default.png');
-    background-size: auto 55%;
+    background-size: auto 50%;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow:
@@ -82,6 +82,7 @@ button{
     border: none;
     border-radius: 99px;
     transition: .6s;
+    position: relative;
     cursor: pointer;
     &:hover{
         box-shadow:
@@ -98,7 +99,6 @@ button{
             inset -4px -4px 4px #fff,
             9px 0 9px #ddd,
             0 9px 9px #ddd;
-        background-size: 50%;
     }
 }
 .driver-on{
@@ -145,6 +145,9 @@ button{
 }
 #driver-print{
     background-image: url('../assets/print.png');
+}
+#driver-portfolio{
+    background-image: url('../assets/portfolio.png');
 }
 .sensor{
     width: 40px;
@@ -686,4 +689,107 @@ button{
 .ref-block-wrapper p{
     margin: 1em 0;
     line-height: 1.55em;
+}
+#item-portfolio > div{
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+#portf-panel{
+    padding: 1.5em;
+    box-shadow:
+        -3px -3px 5px #fff,
+        3px 3px 5px #ddd;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: .3em;
+}
+.portf-driver{
+    margin: 1em 0;
+    padding: 1em 2em;
+    font-size: 1.1em;
+    box-shadow:
+        -4px -4px 8px #fff,
+        4px 4px 8px #ddd;
+    border: none;
+    border-radius: 9px;
+    text-align: left;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+        box-shadow:
+            -8px -8px 8px 3px #fff,
+            8px 8px 8px 3px #ddd;
+    }
+    &:focus{
+        box-shadow:
+            -8px 0 9px #fff,
+            0 -8px 9px #fff,
+            inset 8px 8px 15px #ddd,
+            inset -8px -8px 15px #fff,
+            3px 0 9px #ccc,
+            0 3px 9px #ccc;
+    }
+}
+.portf-active{
+    box-shadow:
+        -8px 0 9px #fff,
+        0 -8px 9px #fff,
+        inset 8px 8px 15px #ddd,
+        inset -8px -8px 15px #fff,
+        3px 0 9px #ccc,
+        0 3px 9px #ccc;
+    &:hover{
+        box-shadow:
+            -8px 0 9px #fff,
+            0 -8px 9px #fff,
+            inset 8px 8px 15px #ddd,
+            inset -8px -8px 15px #fff,
+            3px 0 9px #ccc,
+            0 3px 9px #ccc;
+}
+}
+#portf-screen{
+    margin: 1.5em 0;
+    padding: 1.25em;
+    font-weight: 400;
+    font-size: 1em;
+    box-shadow:
+        inset 5px 12px 5px #ddd,
+        inset -12px -5px 5px #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 1em 1em 0;
+}
+.content-portf-screen{
+    width: 100%;
+    padding: 1.75em;
+    box-shadow:
+        -5px -5px 5px #fff,
+        5px 5px 5px #ddd;
+    display: flex;
+    border-radius: 1em;
+}
+#portf-screen p{
+    max-width: 95%;
+    margin-bottom: 1.5em ;
+    line-height: 1.65em;
+}
+#portf-screen p:nth-last-child(1){
+    margin-bottom: 0;
+}
+.content-portf-screen > div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.rd-cols{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.rd-cols-title p{
+    font-size: 1.5em;
+    color: var(--color);
 }
