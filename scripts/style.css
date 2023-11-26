@@ -621,14 +621,26 @@ button{
     left: 2.5em;
 }
 .ref-block-wrapper h1{
+    padding: .3em;
     color: #444;
     font-size: 1.5em;
+    box-shadow:
+        -1px -1px 1px #eee,
+        inset 5px 5px 12px #ddd,
+        inset -5px -5px 12px #fff,
+        1px 1px 1px #fff;
 }
 .ref-block-wrapper h2{
+    margin: .5em 0;
+    padding: .3em 1em;
     color: #aaa;
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 1em;
     font-style: italic;
+    box-shadow:
+        -2px -2px 2px #fff,
+        2px 2px 2px #ddd;
+    border-radius: 1.5em;
 }
 .ref-sc-bt{
     margin: .5em .25em;
@@ -670,4 +682,8 @@ button{
         scale: 1.4;
         translate: 0 -.5em;
     }
+}
+.ref-block-wrapper p{
+    margin: 1em 0;
+    line-height: 1.55em;
 }
