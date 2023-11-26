@@ -591,3 +591,83 @@ button{
 #s-11{
     background-image: url('../assets/computer.png');
 }
+#item-references{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em
+}
+.ref-block-wrapper{
+    padding: 4em 2em 1.5em 2em;
+    box-shadow:
+        inset 9px 9px 5px #ddd,
+        inset -9px -9px 5px #fff;
+    border-radius: .5em;
+    position: relative;
+}
+.ref-block-wrapper > div > div:nth-child(1){
+    padding: 2.5em;
+    background: var(--base) url('../assets/comments.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow:
+        inset -5px 3px 5px #fff,
+        inset 5px -3px 5px #ddd;
+    border-radius: .5em;
+    rotate: 45deg;
+    position: absolute;
+    top: -2.5em;
+    left: 2.5em;
+}
+.ref-block-wrapper h1{
+    color: #444;
+    font-size: 1.5em;
+}
+.ref-block-wrapper h2{
+    color: #aaa;
+    font-weight: 400;
+    font-size: 1.25em;
+    font-style: italic;
+}
+.ref-sc-bt{
+    margin: .5em .25em;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .05s;
+    &:hover{
+        filter: brightness(120%);
+    }
+}
+.ref-linkedin{
+    background: url('../assets/linkedin.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &:hover{
+        scale: 1.4;
+        translate: 0 -.5em;
+    }
+}
+.ref-phone{
+    background: url('../assets/phone.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &:hover{
+        scale: 1.4;
+        translate: 0 -.5em;
+    }
+}
+.ref-email{
+    background: url('../assets/email.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &:hover{
+        scale: 1.4;
+        translate: 0 -.5em;
+    }
+}
