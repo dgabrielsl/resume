@@ -29,6 +29,9 @@ body{
 button{
     outline: none !important;
 }
+#site{
+    padding-bottom: 1.5em;
+}
 #home{
     max-width: 80%;
     min-height: 100vh;
@@ -763,8 +766,7 @@ button{
     border-radius: 0 1em 1em 0;
 }
 .content-portf-screen{
-    width: 100%;
-    padding: 1.75em;
+    width: 100%;    padding: 1.75em;
     box-shadow:
         -5px -5px 5px #fff,
         5px 5px 5px #ddd;
@@ -779,7 +781,7 @@ button{
 #portf-screen p:nth-last-child(1){
     margin-bottom: 0;
 }
-.content-portf-screen > div{
+.cps-grid{
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -826,4 +828,36 @@ button{
         content: '↗';
         position: absolute;
     }
+}
+.screen-side-b{
+    padding: 1em;
+    height: 100%;
+    align-self: center;
+    box-shadow:
+        inset 5px 5px 3px #ddd,
+        inset -5px -5px 3px #fff;
+    border-radius: .5em;
+}
+.screen-side-b h1,
+.screen-side-b > div{
+    padding: .25em;
+    text-align: center;
+    box-shadow:
+        inset 3px 3px 2px #ddd,
+        inset -3px -3px 2px #fff;
+}
+.screen-side-b > div{
+    margin-top: 1em;
+}
+.screen-side-b img{
+    width: 60%;
+    margin: 1em auto;
+    display: block;
+    box-shadow:
+        -3px 0 4px 5px #fff,
+        0 -3px 4px 5px #fff,
+        3px 0 4px 5px #bbb,
+        0 3px 4px 5px #bbb;
+    border-radius: .25em;
+    cursor: pointer;
 }
