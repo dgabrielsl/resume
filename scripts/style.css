@@ -5,10 +5,10 @@
 *{
 	margin: 0;
 	padding: 0;
-	-ms-user-select: none;
+	/* -ms-user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
-	user-select: none;
+	user-select: none; */
 	box-sizing: border-box;
 	cursor: default;
 }
@@ -693,171 +693,132 @@ button{
     margin: 1em 0;
     line-height: 1.55em;
 }
-#item-portfolio > div{
-    margin: 1.5em;
-    display: grid;
-    grid-template-columns: 20% 80%;
+#item-portfolio{
+    width: calc(100% - 4em);
+    margin: 0 2em;
 }
-#portf-panel{
-    padding: 1.5em;
-    box-shadow:
-        -3px -3px 5px #fff,
-        3px 3px 5px #ddd;
+#pfs-controls{
+    padding: 1em;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
-    border-radius: .3em;
-}
-.portf-driver{
-    margin: 1em 0;
-    padding: 1em 2em;
-    font-size: 1.1em;
     box-shadow:
-        -4px -4px 8px #fff,
-        4px 4px 8px #ddd;
+        -2px -5px 3px #fff,
+        inset 5px 5px 10px 9px #ddd,
+        inset -5px -5px 10px 9px #fff,
+        2px 5px 3px #ddd;
+    border-radius: 5px;
+}
+.ps-bt{
+    margin: .5em 1em;
+    padding: 1em 2em;
+    background-color: var(--base);
     border: none;
-    border-radius: 9px;
-    text-align: left;
+    border-radius: 5px;
+    box-shadow:
+        -5px -5px 4px #fff,
+        5px 5px 4px #ddd;
     cursor: pointer;
-    transition: .4s;
+    transition: .25s;
     &:hover{
         box-shadow:
-            -8px -8px 8px 3px #fff,
-            8px 8px 8px 3px #ddd;
+            -5px -5px 4px 5px #fff,
+            5px 5px 4px 5px #ddd;
     }
     &:focus{
         box-shadow:
-            -8px 0 9px #fff,
-            0 -8px 9px #fff,
-            inset 8px 8px 15px #ddd,
-            inset -8px -8px 15px #fff,
-            3px 0 9px #ccc,
-            0 3px 9px #ccc;
+            -5px -5px 4px 5px #fff,
+            inset 3px 3px 4px #ddd,
+            inset -3px -3px 4px #fff,
+            5px 5px 4px 5px #ddd;
     }
 }
-.portf-active{
+.ps-bt-active,
+.ps-bt-active:hover{
     box-shadow:
-        -8px 0 9px #fff,
-        0 -8px 9px #fff,
-        inset 8px 8px 15px #ddd,
-        inset -8px -8px 15px #fff,
-        3px 0 9px #ccc,
-        0 3px 9px #ccc;
-    &:hover{
-        box-shadow:
-            -8px 0 9px #fff,
-            0 -8px 9px #fff,
-            inset 8px 8px 15px #ddd,
-            inset -8px -8px 15px #fff,
-            3px 0 9px #ccc,
-            0 3px 9px #ccc;
+        -5px -5px 4px 5px #fff,
+        inset 3px 3px 4px #ddd,
+        inset -3px -3px 4px #fff,
+        5px 5px 4px 5px #ddd;
+    cursor: default;
 }
-}
-#portf-screen{
-    margin: 1.5em 0;
-    padding: 1.25em;
-    font-weight: 400;
-    font-size: 1em;
+#pfs-pages{
+    margin: 1em 0;
+    padding: 1em;
     box-shadow:
-        inset 5px 12px 5px #ddd,
-        inset -12px -5px 5px #fff;
+        inset 2px 2px 5px #ddd,
+        inset -2px -2px 5px #fff;
+}
+.pfs-page{
+    display: none;
+}
+.pfs-page > div{
+    display: flex;
+    flex-flow: row;
+}
+.pfs-prod-table{
     display: flex;
     justify-content: center;
-    border-radius: 0 1em 1em 0;
+    align-items: center;
 }
-.content-portf-screen{
-    width: 100%;    padding: 1.75em;
+.pfs-page table{
+    min-width: 100%;
+}
+.pfs-page tr{
     box-shadow:
-        -5px -5px 5px #fff,
-        5px 5px 5px #ddd;
-    display: flex;
-    border-radius: 1em;
+        -2px -2px 2px #fff,
+        2px 2px 2px #ddd;
+    border-radius: 3em;
 }
-#portf-screen p{
-    max-width: 95%;
-    margin-bottom: .5em ;
-    line-height: 1.65em;
-}
-#portf-screen p:nth-last-child(1){
-    margin-bottom: 0;
-}
-.cps-grid{
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-.rd-cols{
-    margin: 1.5em 0;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
-.rd-cols-title p{
-    font-size: 1.25em;
+.pfs-page th{
+    padding: 1.65em 0 1em 0;
     color: var(--color);
-    letter-spacing: -1.2px;
+    font-weight: 300;
+    font-size: 1.1em;
+    box-shadow:
+        inset 2px 2px 2px #ddd,
+        inset -2px -2px 2px #fff;
+    border-radius: 3em;
 }
-.cols-for-extended-info h2{
-    margin-bottom: .4em;
-    width: fit-content;
-    color: #333;
-    font-size: 1em;
-    font-weight: 400;
-    position: relative;
-    &::after{
-        content: '';
-        width: 100%;
-        height: .6em;
-        position: absolute;
-        background-color: #ff00552a;
-        bottom: -.1em;
-        left: 0;
-    }
+.pfs-page td{
+    padding: 1em .25em;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow:
+        inset 4px 4px 2px #ddd,
+        inset -4px -4px 2px #fff;
 }
-.cols-for-extended-info a{
-    color: #c06;
+.pfs-prod-name{
+    text-align: left !important;
+    padding-left: 1em !important;
+}
+.foo-more-portfolio{
+    margin: 1.5em 0;
+    padding: 1em;
+    box-shadow:
+        2px 2px 1px #ddd,
+        -2px -2px 1px #fff;
+    border-radius: 5px 1em;
+}
+.foo-more-portfolio a{
+    color: var(--color);
     text-underline-position: under;
     cursor: pointer;
-    transition: .4s;
-    &:hover{
-        color: #000;
-        letter-spacing: .25px;
-    }
-    &:hover::after{
-        margin-left: .5em;
-        content: '↗';
-        position: absolute;
-    }
 }
-.screen-side-b{
-    padding: 1em;
-    height: 100%;
-    align-self: center;
-    box-shadow:
-        inset 5px 5px 3px #ddd,
-        inset -5px -5px 3px #fff;
-    border-radius: .5em;
+
+
+
+
+
+
+
+
+.items-slate{
+    display: none !important;
 }
-.screen-side-b h1,
-.screen-side-b > div{
-    padding: .25em;
-    text-align: center;
-    box-shadow:
-        inset 3px 3px 2px #ddd,
-        inset -3px -3px 2px #fff;
+#item-portfolio{
+    display: inline-block !important;
 }
-.screen-side-b > div{
-    margin-top: 1em;
-}
-.screen-side-b img{
-    width: 60%;
-    margin: 1em auto;
-    display: block;
-    box-shadow:
-        -3px 0 4px 5px #fff,
-        0 -3px 4px 5px #fff,
-        3px 0 4px 5px #bbb,
-        0 3px 4px 5px #bbb;
-    border-radius: .25em;
-    cursor: pointer;
+.pfs-page:nth-child(2){
+    display: inline-block;
 }
