@@ -1,0 +1,38 @@
+:root{
+    --base: #364046;
+    --light: #3f4b5a;
+    --dark: #2a3a3a;
+}
+*{
+	margin: 0;
+	padding: 0;
+    -ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+	cursor: default;
+}
+html,
+html *{
+    color: #fff;
+	font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+html{
+    background-color: var(--base);
+}
+.btn{
+    margin: 12em;
+    padding: 1em 3em;
+    background-color: var(--base);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--light) var(--dark) var(--dark) var(--light);
+    border-radius: 9px;
+    outline: none;
+    box-shadow:
+        -3px -3px 5px var(--light),
+        3px 3px 5px var(--dark);
+    cursor: pointer;
+}
