@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+::selection{
+    background-color: #fc115f;
+    color: #2b041b;
+}
+#site{
+    cursor: normal;
+}
+#sheet{
+    cursor: normal;
+}
+#control-panel{
+    width: 100%;
+    padding: 1.15em 1em;
+    background-color: #34373b;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px 2px #34373ba0;
+    user-select: none;
+}
+.c-panel h1{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+    user-select: none;
+}
+.c-panel h1,
+.header-panel-btn{
+    font-family: "Rubik", sans-serif;
+    user-select: none;
+}
+.header-panel-btn{
+    margin-left: 1em;
+    color: #ffa602;
+    font-size: 1em;
+    font-weight: 300;
+    cursor: pointer;
+}
+#control-download{
+    background-color: #34373b;
+    border: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+#control-language{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
