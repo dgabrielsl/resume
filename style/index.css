@@ -132,3 +132,41 @@ body,
     border-radius: 3px;
     position: relative;
 }
+.art-subtitle{
+}
+#tbl-review-and-contact-info{
+    width: 100%;
+    border-collapse: collapse;
+}
+#tbl-review-and-contact-info td{
+    padding: .2em;
+}
+#tbl-review-and-contact-info td:nth-child(odd){
+    width: 15%;
+    padding-right: 1.5em;
+    text-align: right;
+    font-weight: 300;
+    font-style: italic;
+}
+#tbl-review-and-contact-info td:nth-child(even){
+    width: 35%;
+    text-align: left;
+    font-weight: 600;
+}
+.a-soft-style{
+    color: #04aaa2;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .5s;
+    &:hover{
+        color: #00acfc;
+        text-decoration: underline;
+    }
+}
+#social-networks-wrapper{
+    margin-top: 2em;
+    text-align: center;
+}
+#social-networks-wrapper span{
+    padding: .4em;
+}
