@@ -133,6 +133,7 @@ body,
     position: relative;
 }
 .art-subtitle{
+    cursor: normal;
 }
 #tbl-review-and-contact-info{
     width: 100%;
@@ -162,4 +163,92 @@ body,
         color: #00acfc;
         text-decoration: underline;
     }
+}
+#interactive-background-box-wrapper{
+    padding: 1.5em;
+    margin: 1em 0;
+    box-shadow:
+        inset 5px 5px 5px #50535820,
+        inset -5px -5px 5px #fff;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2em;
+    align-items: center;
+}
+.ib-ctrl{
+    display: block;
+    padding: .75em 6em;
+    margin: 1em 0;
+    background-color: #f1f2f6;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow:
+        -5px 0 5px #fff,
+        0 -5px 5px #fff,
+        5px 0 5px #50535820,
+        0 5px 5px #50535820;
+    border-radius: 5px;
+    border: none;
+    &:hover{
+        box-shadow:
+            -9px 0 9px #fff,
+            0 -9px 9px #fff,
+            9px 0 9px #50535820,
+            0 9px 9px #50535820;
+        color: #04aaa2;
+    }
+    &:focus{
+        box-shadow:
+            -5px 0 5px #fff,
+            0 -5px 5px #fff,
+            inset 4px 4px 4px #50535820,
+            inset -4px -4px 4px #fff,
+            5px 0 5px #50535820,
+            0 5px 5px #50535820;
+        color: #04aaa2;
+    }
+}
+.ib-ctrl-focused{
+    box-shadow:
+        -5px 0 5px #fff,
+        0 -5px 5px #fff,
+        inset 4px 4px 4px #50535820,
+        inset -4px -4px 4px #fff,
+        5px 0 5px #50535820,
+        0 5px 5px #50535820;
+    color: #04aaa2;
+}
+.ib-table-background{
+    border-spacing: 1em;
+}
+.ib-table-background td{
+    padding: .75em 2.25em .75em .75em;
+}
+.ib-table-background td:nth-child(even){
+    box-shadow:
+        -3px 0 10px #fff,
+        0 -3px 10px #fff,
+        inset 5px 0 10px #50535810,
+        inset 0 5px 10px #50535810,
+        inset -5px 0 5px #fff,
+        inset 0 -5px 5px #fff,
+        3px 0 10px #50535820,
+        0 3px 10px #50535820;
+    border-radius: .5em;
+}
+.ib-table-background li{
+    list-style-position: inside;
+}
+.ib-table-background li:not(:last-child){
+    padding-bottom: 1.1em;
+}
+.ib-table-background td:nth-child(odd){
+    padding-right: 0;
+    color: #777;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: right;  
 }
