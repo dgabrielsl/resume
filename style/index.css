@@ -219,9 +219,19 @@ body,
         5px 0 5px #50535820,
         0 5px 5px #50535820;
     color: #04aaa2;
+    &:hover{
+        box-shadow:
+            -5px 0 5px #fff,
+            0 -5px 5px #fff,
+            inset 4px 4px 4px #50535820,
+            inset -4px -4px 4px #fff,
+            5px 0 5px #50535820,
+            0 5px 5px #50535820;
+    }
 }
 .ib-table-background{
     border-spacing: 1em;
+    display: none;
 }
 .ib-table-background td{
     padding: .75em 2.25em .75em .75em;
